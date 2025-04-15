@@ -1,8 +1,8 @@
 class Book:
     def __init__(self, title, author, pages):
-        self.title = title
-        self.author = author
-        self.pages = pages
+        title  = self.title
+        author = self.author
+        paages = self.pages
 
     def description(self):
         return f"'{self.title}' by {self.author}, {self.pages} pages."
@@ -29,8 +29,8 @@ class PrintedBook(Book):
         print(f"You flip through the {self.cover_type} '{self.title}' with a fresh paper smell. ")
 
 # Example usage
-book1 = Ebook("Digital Future", "Jane Tech", 250, 5)
-book2 = PrintedBook("The Old Library", "John Classic", 320, "Hardcover")
+book1 = Ebook("Art of War", "Sun Tzu", 260, 5)
+book2 = PrintedBook("48 laws of Power", "Robert Greene", 496, "Hardcover")
 
 print(book1.description())
 book1.read()
